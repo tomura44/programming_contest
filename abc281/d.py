@@ -11,7 +11,7 @@ for n in range(N):
                 dp[d][n][k] = max(dp[d][n][k], dp[d][n+1][k])
 
                 if k < K:
-                    dp[(d + A[n]) % D][n + 1][k + 1] = max(dp[d][n][k] + A[n]), dp[(d+A[n], dp[(d+A[n])%D][n+1][k+1])]
+                    dp[(d + a[n]) % D][n + 1][k + 1] = max(dp[d][n][k] + a[n]), dp[(d+A[n], dp[(d+a[n])%D][n+1][k+1])]
                     
                     
 if dp[0][-1][-1] >= 0:
